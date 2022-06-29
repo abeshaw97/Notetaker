@@ -14,7 +14,7 @@ npm install in order to actually use the code. once its downloaded you will then
 
 ## Usage 
 Watch video in order to see how everything will run...
-watch video-(insert video link here)
+watch video-(https://drive.google.com/file/d/10cGhiMQY0Fcz5VYIhrsCiAni87Fpt5XW/view?usp=sharing)
 
 ## Questions
 If you have any questions you can reach me at shawabra@msu.edu
