@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-
 module.exports = app => {
 
     // Setup notes variable
@@ -10,9 +9,6 @@ module.exports = app => {
 
         var notes = JSON.parse(data);
 
-        // API ROUTES
-        // ========================================================
-    
         // Setup the /api/notes get route
         app.get("/api/notes", function(req, res) {
             // Read the db.json file and return all saved notes as JSON.
@@ -41,9 +37,6 @@ module.exports = app => {
             console.log("Deleted note with id "+req.params.id);
         });
 
-        // VIEW ROUTES
-        // ========================================================
-
         // Display notes.html when /notes is accessed
         app.get('/notes', function(req,res) {
             res.sendFile(path.join(__dirname, "../public/notes.html"));
@@ -61,7 +54,5 @@ module.exports = app => {
                 return true;
             });
         }
-
     });
-
 }
